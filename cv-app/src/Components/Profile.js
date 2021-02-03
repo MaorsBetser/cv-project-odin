@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
-import Header from './Components/Header'
 
-export default class App extends Component {
+export default class Profile extends Component {
   constructor(props){
     super(props)
   }
   render() {
     return (
       <div>
-        <Header />
+        <img src={this.props.image} alt={this.props.profileName}/>
       </div>
     )
   }
